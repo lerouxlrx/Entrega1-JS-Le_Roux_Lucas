@@ -73,7 +73,7 @@ while (chances != 0) {
         chances--
         ganador = true;
         break;
-    } else if (numElegido > 10){
+    } else if (isNaN(numElegido) || numElegido < 1 || numElegido > 10){
         alert('Elegí un numero del 1 al 10.');
     } else if (chances == 1){
         alert('Lo lamentamos, el número ganador era el '+ numGanador +'. Te quedaste sin chances, pero no te preocupes! Recomendanos a un compañero de trabajo, para que pueda participar con su correo y ambos prueben Tu Gestión.')
