@@ -64,8 +64,7 @@ if (sumaChances.toLowerCase() == 'si') {
     alert('No respondiste ninguna pregunta, tenes '+chances+' chance. ¡Vamos al sorteo!');
 }
 
-imprimirLog ('Chances: '+chances);
-imprimirLog ('Numero Ganador: '+numGanador);
+imprimirLog ('Chances para sorteo: '+chances);
 
 while (chances != 0) {
     let numElegido = parseInt(prompt ("Adivina el número del 1 al 10, te quedan " + (chances) + " intentos"));
@@ -88,6 +87,8 @@ while (chances != 0) {
     }
 }
 
-imprimirLog ('Ganador : '+ganador)
-imprimirLog ('Chances restantes: '+chances)
+imprimirLog ('Ganador : '+ganador);
+imprimirLog ('Numero Ganador: '+numGanador);
+imprimirLog ('Numero Elegido: '+numElegido);
+imprimirLog ('Chances restantes: '+chances);
 
